@@ -23,7 +23,7 @@ export const Header = ()=> {
                 <div className="flex items-center justify-between relative max-w-[1450px] w-[90%] my-0 mx-auto">
                     <h1 className="z-10 flex-grow lg:flex-initial">
                         <a href="/" title="home" rel="home">
-                            <img className="h-8 md:h-8 lg:h-16"  src="src/assets/images/colibri-logo.png" alt="Colibrí logo" title="Colibrí logo" />
+                            <img className="h-8 md:h-8 lg:h-16"  src="assets/colibri-logo.png" alt="Colibrí logo" title="Colibrí logo" />
                         </a>
                     </h1>
                     <ul className={ `header__menu fixed top-0 left-0 w-full h-full flex flex-col flex-wrap justify-center items-center bg-[#43CFF3] lg:bg-transparent lg:static lg:flex-row lg:justify-end ${isOpen ? "open" : "" }` }>
