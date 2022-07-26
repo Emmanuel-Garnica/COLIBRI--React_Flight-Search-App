@@ -1,0 +1,73 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'FuturaBT';
+  src : url('./assets/fonts/FuturaBT-Heavy.eot') format('embedded-opentype'),
+  url('./assets/fonts/FuturaBT-Heavy.woff') format('woff'),
+  url('./assets/fonts/FuturaBT-Heavy.woff2') format('woff2');
+  font-weight: heavy;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaBT';
+  src : url('./assets/fonts/FuturaBT-Medium.eot') format('embedded-opentype'),
+  url('./assets/fonts/FuturaBT-Medium.woff') format('woff'),
+  url('./assets/fonts/FuturaBT-Medium.woff2') format('woff2');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LucidaGrande-Bold';
+  src : url('./assets/fonts/LucidaGrande-Bold.eot') format('embedded-opentype'),
+  url('./assets/fonts/LucidaGrande-Bold.woff') format('woff'),
+  url('./assets/fonts/LucidaGrande-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* General menu some styles */
+
+@media (max-width: 1023px) {
+  .header__menu {
+    @apply transform -translate-x-full transition-transform duration-300 ease-in-out;
+  }
+}
+
+.header__menu.open {
+  @apply transform translate-x-0;
+}
+
+/* Burguer menu styles */
+
+.header__burguer div:first-child.open {
+  @apply rotate-45;
+}
+
+.header__burguer div:nth-child(2).open {
+  @apply translate-x-5;
+}
+
+.header__burguer div:nth-child(3).open {
+  @apply -rotate-45;
+}
+
+.header__burguer.open div:first-child {
+  @apply rotate-45;
+}
+
+.header__burguer.open div:nth-child(2) {
+  @apply translate-x-5 opacity-0;
+}
+
+.header__burguer.open div:nth-child(3) {
+  @apply -rotate-45;
+}
